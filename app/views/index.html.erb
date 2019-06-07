@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>All the Students</title>
+  </head>
+  <h1>All The Students</h1>
+  <body>
+    <ul>
+      <% @student.each do |s| %>
+        <li><%= s.first_name, sr.last_name %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
+
+
+<!-- create a list in this erb file iterating over all the students with @student.all.map {|student| student} in erb format  -->
